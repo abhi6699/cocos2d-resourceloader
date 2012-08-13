@@ -33,8 +33,9 @@
 		// init view
 		CGSize winSize = [[CCDirector sharedDirector] winSize];
 		
-		_progress = [CCProgressTimer progressWithFile:@"Icon.png"];
-		_progress.type = kCCProgressTimerTypeRadialCW;
+        CCSprite *sprite = [CCSprite spriteWithFile:@"Icon.png"];
+		_progress = [CCProgressTimer progressWithSprite:sprite];
+		_progress.type = kCCProgressTimerTypeRadial;
 		_progress.position = ccp(winSize.width / 2, winSize.height / 2);
 		[self addChild:_progress];
 		
@@ -66,6 +67,10 @@
 	
 	if (progressPercentage == 1.0f) {
 		[_loadingLabel setString:@"Loading complete"];
+        
+        CCSprite *sprite = [CCSprite spriteWithFile:@"Icon.png"];
+        sprite.position = CGPointMake(160, 100);
+        [self addChild:sprite];
 	}
 }
 

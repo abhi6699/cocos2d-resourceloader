@@ -1,20 +1,25 @@
 //
 //  AppDelegate.h
-//  ResourceLoaderTest
+//  cocos2d-resourceloader
 //
-//  Created by Raul Uranga on 5/24/12.
-//  Copyright GrupoW 2012. All rights reserved.
+//  Created by Bartłomiej Wilczyński on 8/13/12.
+//  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "cocos2d.h"
 
-@class RootViewController;
-
-@interface AppDelegate : NSObject <UIApplicationDelegate> {
-	UIWindow			*window;
-	RootViewController	*viewController;
+@interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
+{
+	UIWindow *window_;
+	UINavigationController *navController_;
+    
+	CCDirectorIOS	*director_;							// weak ref
 }
 
 @property (nonatomic, retain) UIWindow *window;
+@property (readonly) UINavigationController *navController;
+@property (readonly) CCDirectorIOS *director;
 
 @end
+

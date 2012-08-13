@@ -132,9 +132,11 @@ static id _sharedLoader = nil;
 		[_lock lock];
 		
 		if(_auxEAGLcontext == nil ) {
+            CCGLView *view = (CCGLView*)[[CCDirector sharedDirector] view];
+            
 			_auxEAGLcontext = [[EAGLContext alloc]
-							  initWithAPI:kEAGLRenderingAPIOpenGLES1
-							  sharegroup:[[[[CCDirector sharedDirector] openGLView] context] sharegroup]];
+							  initWithAPI:kEAGLRenderingAPIOpenGLES2
+							  sharegroup:[[view context] sharegroup]];
 		}
 		
 		[EAGLContext setCurrentContext: _auxEAGLcontext];

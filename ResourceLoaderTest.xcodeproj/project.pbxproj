@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A87610515D9832A000D6DA5 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87609815D98305000D6DA5 /* libcocos2d.a */; };
 		1A87610815D98359000D6DA5 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87609C15D98305000D6DA5 /* libCocosDenshion.a */; };
+		1A8761EE15D9860E000D6DA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8761EC15D98523000D6DA5 /* AppDelegate.m */; };
 		C4A0C4B1156E9DFC00E0B7AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A0C4B0156E9DFC00E0B7AA /* QuartzCore.framework */; };
 		C4A0C4B3156E9DFC00E0B7AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A0C4B2156E9DFC00E0B7AA /* OpenGLES.framework */; };
 		C4A0C4B5156E9DFC00E0B7AA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A0C4B4156E9DFC00E0B7AA /* OpenAL.framework */; };
@@ -27,8 +28,6 @@
 		C4A0C4D1156E9DFC00E0B7AA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4A0C4D0156E9DFC00E0B7AA /* Icon@2x.png */; };
 		C4A0C4D4156E9DFC00E0B7AA /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = C4A0C4D3156E9DFC00E0B7AA /* iTunesArtwork */; };
 		C4A0C611156E9DFF00E0B7AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0C610156E9DFF00E0B7AA /* main.m */; };
-		C4A0C614156E9DFF00E0B7AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0C613156E9DFF00E0B7AA /* AppDelegate.m */; };
-		C4A0C617156E9DFF00E0B7AA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0C616156E9DFF00E0B7AA /* RootViewController.m */; };
 		C4A0C626156E9E5C00E0B7AA /* NSThread+BlockExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0C624156E9E5C00E0B7AA /* NSThread+BlockExtensions.m */; };
 		C4A0C627156E9E5C00E0B7AA /* ResourcesLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A0C625156E9E5C00E0B7AA /* ResourcesLoader.m */; };
 		C4A0C62A156E9E6B00E0B7AA /* collect.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4A0C628156E9E6B00E0B7AA /* collect.wav */; };
@@ -454,6 +453,8 @@
 
 /* Begin PBXFileReference section */
 		1A87602115D98301000D6DA5 /* cocos2d-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-ios.xcodeproj"; path = "lib/cocos2d/cocos2d-ios.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		1A8761EB15D98523000D6DA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A8761EC15D98523000D6DA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C4A0C4AC156E9DFC00E0B7AA /* ResourceLoaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResourceLoaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A0C4B0156E9DFC00E0B7AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C4A0C4B2156E9DFC00E0B7AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -475,11 +476,6 @@
 		C4A0C4D3156E9DFC00E0B7AA /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 		C4A0C60F156E9DFF00E0B7AA /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		C4A0C610156E9DFF00E0B7AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4A0C612156E9DFF00E0B7AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C4A0C613156E9DFF00E0B7AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4A0C615156E9DFF00E0B7AA /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		C4A0C616156E9DFF00E0B7AA /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		C4A0C61B156E9DFF00E0B7AA /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		C4A0C622156E9E5C00E0B7AA /* NSThread+BlockExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+BlockExtensions.h"; sourceTree = "<group>"; };
 		C4A0C623156E9E5C00E0B7AA /* ResourcesLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesLoader.h; sourceTree = "<group>"; };
 		C4A0C624156E9E5C00E0B7AA /* NSThread+BlockExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+BlockExtensions.m"; sourceTree = "<group>"; };
@@ -611,13 +607,10 @@
 			isa = PBXGroup;
 			children = (
 				C4A0C621156E9E4800E0B7AA /* ResourcesLoader */,
+				1A8761EB15D98523000D6DA5 /* AppDelegate.h */,
+				1A8761EC15D98523000D6DA5 /* AppDelegate.m */,
 				C4A0C62C156E9F0C00E0B7AA /* HelloWorldScene.h */,
 				C4A0C62D156E9F0C00E0B7AA /* HelloWorldScene.m */,
-				C4A0C612156E9DFF00E0B7AA /* AppDelegate.h */,
-				C4A0C613156E9DFF00E0B7AA /* AppDelegate.m */,
-				C4A0C615156E9DFF00E0B7AA /* RootViewController.h */,
-				C4A0C616156E9DFF00E0B7AA /* RootViewController.m */,
-				C4A0C61B156E9DFF00E0B7AA /* GameConfig.h */,
 				C4A0C4C1156E9DFC00E0B7AA /* Resources */,
 				C4A0C4D5156E9DFC00E0B7AA /* lib */,
 				C4A0C60E156E9DFF00E0B7AA /* Supporting Files */,
@@ -1154,9 +1147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8761EE15D9860E000D6DA5 /* AppDelegate.m in Sources */,
 				C4A0C611156E9DFF00E0B7AA /* main.m in Sources */,
-				C4A0C614156E9DFF00E0B7AA /* AppDelegate.m in Sources */,
-				C4A0C617156E9DFF00E0B7AA /* RootViewController.m in Sources */,
 				C4A0C626156E9E5C00E0B7AA /* NSThread+BlockExtensions.m in Sources */,
 				C4A0C627156E9E5C00E0B7AA /* ResourcesLoader.m in Sources */,
 				C4A0C62E156E9F0C00E0B7AA /* HelloWorldScene.m in Sources */,
@@ -1224,9 +1216,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ResourceLoaderTest/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = ResourceLoaderTest/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "lib/cocos2d/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1239,9 +1233,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ResourceLoaderTest/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = ResourceLoaderTest/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "lib/cocos2d/**";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
