@@ -35,7 +35,8 @@ static id _sharedLoader = nil;
 		self.resources = [NSMutableSet set];
 		self.loaders = [NSDictionary dictionaryWithObjectsAndKeys:
 						[TextureLoader loader], @"png",
-						[SoundEffectLoader loader], @"wav", nil];
+						[SoundEffectLoader loader], @"wav",
+                        [SoundEffectLoader loader], @"mp3",nil];
 	}
 	
 	return self;
