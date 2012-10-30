@@ -36,6 +36,7 @@ static id _sharedLoader = nil;
 		self.loaders = [NSDictionary dictionaryWithObjectsAndKeys:
 						[TextureLoader loader], @"png",
 						[SoundEffectLoader loader], @"wav",
+                        [SoundEffectLoader loader], @"caf",
                         [SoundEffectLoader loader], @"mp3",nil];
 	}
 	
@@ -171,7 +172,14 @@ static id _sharedLoader = nil;
 
 - (void)loadResource:(NSString *)path
 {
-	[[SimpleAudioEngine sharedEngine] preloadEffect:path];
+    if ([path hasPrefix:@".mp3"])
+    {
+        [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:path];
+    }
+    else{
+        [[SimpleAudioEngine sharedEngine] preloadEffect:path];
+    }
+	
 }
 
 @end
