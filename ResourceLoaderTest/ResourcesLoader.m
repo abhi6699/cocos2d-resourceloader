@@ -172,7 +172,7 @@ static id _sharedLoader = nil;
 
 - (void)loadResource:(NSString *)path
 {
-    if ([path hasPrefix:@".mp3"])
+    if ([path hasSuffix:@".mp3"])
     {
         [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:path];
     }
